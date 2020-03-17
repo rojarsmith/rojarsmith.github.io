@@ -3,7 +3,7 @@ layout: page
 title: Rojar Smith
 subtitle: The men in software business for 20+ years.
 use-site-title: true
-lang: en
+lang: zh
 ---
 
 <style type="text/css">
@@ -30,14 +30,12 @@ lang: en
   }
 </style>
 
-
-{% if paginator.page == 1 %}
 <div>
   <article class="post-preview">
     <h2 class="post-title">Summary</h2>
     <br>
     <div class="post-entry-container">
-      &ensp;&ensp;I am Rojar Smith, who had been programming since I was 10, began with Apple II. A firm believer in the
+      &ensp;&ensp;我是 Rojar Smith, 一位10歲就從Apple II開始的程式開發者。A firm believer in the
       software craftsmanship movement, I am a developer by choice and conviction.
       I had been working on the conception of enterprise-level applications in C++, C, C#, Java, python, nodejs, ASM and
       others throughout the
@@ -198,15 +196,13 @@ lang: en
     </div>
   </article>
 </div>
-{% endif %}
-
 
 <div id="log" class="{{ include.type }}-heading" style="text-align:center;">
-  <h1>LOG<br /></h1>
+  <h1>日誌<br /></h1>
 </div>
 
 <div class="posts-list">
-  {% assign pposts=paginator.posts | where:"lang", page.lang %}
+  {% assign pposts=site.posts | where:"lang", page.lang %}
   {% for post in pposts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">

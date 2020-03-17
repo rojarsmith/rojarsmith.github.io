@@ -1,0 +1,9 @@
+languages:
+  - language: "en"
+    links:
+      - title: "zh"
+        url: /zh/
+  - language: "zh"
+    links:
+      - title: "en"
+        url: /
